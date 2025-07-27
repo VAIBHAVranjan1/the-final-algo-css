@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Two Rhombuses</title>
+  <style>
+    body {
+      margin: 0;
+      background: #1e1e1e;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 200px;
+      height: 120px;
+    }
+
+    .rhombus {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: #2196f3;
+      transform: skewY(30deg) rotate(-45deg);
+      transform-origin: center;
+    }
+
+    .right {
+      left: 100px;
+      background-color: #00bfa5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rhombus left"></div>
+    <div class="rhombus right"></div>
+  </div>
+</body>
+</html>
